@@ -29,7 +29,6 @@ defmodule FLightex.Bookings.CreateOrUpdateTest do
     end
 
     test "when all params are valid, saves the booking", %{params: params, id_usuario: id_usuario} do
-
       response = CreateOrUpdate.call(params, id_usuario)
 
       assert {:ok, _id} = response
